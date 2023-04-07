@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
     build: {
         lib: {
-            entry: resolve(__dirname, 'src', "index.ts"),
+            entry: resolve(__dirname, 'src', "index.js"),
             formats: ['cjs'],
             fileName: 'main',
         },
@@ -14,7 +14,7 @@ export default defineConfig({
         },
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'src', "index.ts"),
+                main: resolve(__dirname, 'src', "index.js"),
             },
             output: {
                 name: 'main',
