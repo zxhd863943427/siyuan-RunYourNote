@@ -1,25 +1,6 @@
-# Siyuan Sample Plugin
+其实就是把笔记导出成 js 再重写一下导入啦。
 
-This is a sample plugin of siyuan plugin system.
+启动后，然后直接看一看你的笔记编辑器窗口有没有多出点啥就行了：
+![Alt text](img/image-20230405035600-oon05ei.jpg)
 
-## Install
-
-Clone the project to your computer. Use `pnpm install` to install the dependencies. Pnpm is mordern node module manager. You can learn it from [Pnpm website](https://pnpm.io/).
-
-Then you can find the entry of plugin at `src/index.ts`, which export a default class. Plugins must export a default class which extended from `Plugin`. Plugin has `onload` and `onunload` lifecycle hook. Which will called when the plugin is loaded and unloaded.
-
-## Build
-
-Run `pnpm build` to generate the target `main.js` in dist/ folder. Copy it and the manifest.json and put them into plugins/\<pluginName\> folder in your Siyuan workspace, like `workspace/data/plugins/siyuan-plugin-sample`.
-
-## Toolchain
-
-+ Vite
-+ Pnpm
-+ Typescript: Strongly recommanded.
-
-Feel free to install your own dependencies, like `vue`, `react`, `svelte` and so on.
-
-## Manifest
-
-You should write a manifest.json file to describe the plugin. It contains `name`, `version`, `description`, `author` and `url`.
+详情参见[思源笔记折腾记录 - 运行你的笔记 - 链滴](https://ld246.com/article/1680639637741)
